@@ -17,7 +17,6 @@
   color: #fff;
   padding: 10px;
   display: flex;
-  gap: 2rem;
 }
 
 .galleryNav:last-child {
@@ -55,6 +54,11 @@
   display: none;
 }
 
+.activate {
+  background-color: #c7d3d4ff;
+  color: #5913b7;
+}
+
 @media (max-width: 880px) {
   .gallerySubNav {
     font-size: 13px;
@@ -78,10 +82,28 @@
   }
 
   .galleryNav {
-    display: none;
+    background: none;
+    color: #333;
+    padding: 5px;
+    text-transform: lowercase;
+    font-size: 15px;
   }
 
-  .menu {
+  .slash {
     display: block;
   }
+
+  .tags {
+    border: 1px solid #333;
+    border-radius: 10px;
+  }
+
+  .activate {
+    background: linear-gradient(to right, #9557d3, #5913b7);
+    color: #fff;
+  }
+
+  /* .menu {
+    display: block;
+  } */
 }

@@ -31,30 +31,35 @@ const Gallery = () => {
             handleSetTag={setTag}
             tagActive={tag === "all" ? true : false}
           />
+
           <TagButton
             name="cards"
             handleSetTag={setTag}
-            tagActive={tag === "Business Card" ? true : false}
+            tagActive={tag === "cards" ? true : false}
           />
+
           <TagButton
             name="logo"
             handleSetTag={setTag}
-            tagActive={tag === "Logo" ? true : false}
+            tagActive={tag === "logo" ? true : false}
           />
+
           <TagButton
             name="flyers"
             handleSetTag={setTag}
-            tagActive={tag === "Flyers Design" ? true : false}
+            tagActive={tag === "flyers" ? true : false}
           />
+
           <TagButton
             name="printing"
             handleSetTag={setTag}
-            tagActive={tag === "T-shirt Printing" ? true : false}
+            tagActive={tag === "printing" ? true : false}
           />
+
           <TagButton
             name="product-packaging"
             handleSetTag={setTag}
-            tagActive={tag === "T-shirt Printing" ? true : false}
+            tagActive={tag === "product-packaging" ? true : false}
           />
         </div>
       </div>
