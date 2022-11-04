@@ -1,0 +1,48 @@
+.heroSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  /* Created with https://www.css-gradient.com */
+  background: #9557d3;
+  background: -webkit-linear-gradient(bottom, #9557d3, #5913b7);
+  background: -moz-linear-gradient(bottom, #9557d3, #5913b7);
+  background: linear-gradient(to top, #9557d3, #5913b7);
+  padding: 3rem 9%;
+}
+
+.welcome {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.header {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 1.2rem;
+  color: #fff;
+}
+
+.headerDesc {
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.buttons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.heroBanner {
+  justify-self: center;
+  align-self: center;
+}
+
+.heroBanner img {
+  width: 300px;
+}

@@ -1,0 +1,9 @@
+.copywrite {
+  padding: 3rem 9%;
+  background: linear-gradient(to left, #9557d3, #5913b7);
+}
+
+.copywrite p {
+  color: #fff;
+  text-align: center;
+}
