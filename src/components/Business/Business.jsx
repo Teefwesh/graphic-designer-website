@@ -13,13 +13,16 @@ const Business = () => {
   return (
     <div className="businessSection" id="services">
       <h1
-        style={{ textAlign: "center" }}
+        style={{ textAlign: "center", color: "#040349" }}
         data-aos="fade-right"
         data-aos-offset="200"
         data-aos-easing="ease-in-sine"
       >
         Our Services
       </h1>
+      <p style={{ textAlign: "center", marginBottom: "1.5rem" }}>
+        We provide the best services for our customers
+      </p>
       <div className="services">
         {services.map((service) => (
           <div className="cardContainer" key={service.id}>

@@ -1,6 +1,7 @@
 .businessSection {
-  padding: 2rem 9% 6rem;
+  padding: 6rem 9%;
   /* margin-top: -8.5rem; */
+  background-color: #f6f9fc;
 }
 
 .services {
@@ -10,7 +11,7 @@
 }
 
 .cardContainer {
-  width: 280px;
+  width: 300px;
   margin-top: 2rem;
   border-radius: 8px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -35,6 +36,6 @@
 }
 
 .cardDesc p {
-  text-align: justify;
+  text-align: center;
   color: #666;
 }

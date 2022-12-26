@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #333;
 }
 
 html {
@@ -27,16 +26,19 @@ a {
   border-radius: 3px;
   font-size: 1.2rem;
   cursor: pointer;
-  background: linear-gradient(to left, #9557d3, #5913b7);
+  background: #030167;
+  border: 1px solid #030167;
   color: #fff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  font-weight: 700;
+  font-weight: 500;
   transition: all 0.3s;
   font-family: "Poppins", sans-serif !important;
 }
 
 .myBtn:hover {
   transform: translateY(-2px);
-
+  background-color: #fff;
+  color: #030167;
+  border: 1px solid #030167;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }

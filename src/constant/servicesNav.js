@@ -15,7 +15,7 @@ export const services = [
     name: "Graphic Design",
     img: Graphics,
     description:
-      "Offering a full range of services such as Website Design, Design Consulting, branding/logo design (logo animation & motion graphics)",
+      "We offer a full range of services such as Graphic Design, Design Consulting, Branding / Logo Design (Logo animation & Motion graphics)",
   },
   {
     id: 3,

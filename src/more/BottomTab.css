@@ -1,0 +1,53 @@
+.bottomTab {
+  display: flex;
+}
+
+.bottomNav {
+  color: #000;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.bottomNav:hover {
+  scale: 1.2;
+  transition: all 0.3s;
+}
+
+.settings {
+  color: blue;
+  animation: spin 4s linear infinite;
+}
+
+.msg {
+  color: blue;
+}
+
+.fa-image {
+  color: red;
+}
+
+.login {
+  color: green;
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 880px) {
+  .bottomNav {
+    display: block;
+  }
+
+  .bottomTab {
+    background: #f0f0f0;
+    justify-content: space-around;
+    padding: 15px 0;
+    position: sticky;
+    bottom: 0;
+  }
+}

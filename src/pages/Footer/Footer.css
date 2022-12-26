@@ -1,9 +1,9 @@
 .copywrite {
   padding: 3rem 9%;
-  background: linear-gradient(to left, #9557d3, #5913b7);
+  background: #030166;
 }
 
 .copywrite p {
-  color: #fff;
+  color: gold;
   text-align: center;
 }

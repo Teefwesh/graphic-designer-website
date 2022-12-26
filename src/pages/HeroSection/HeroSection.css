@@ -2,40 +2,38 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 3rem;
-  /* Created with https://www.css-gradient.com */
-  background: #9557d3;
-  background: -webkit-linear-gradient(bottom, #9557d3, #5913b7);
-  background: -moz-linear-gradient(bottom, #9557d3, #5913b7);
-  background: linear-gradient(to top, #9557d3, #5913b7);
-  padding: 3rem 9%;
+  background: #fff;
+  padding: 6rem 9% 9rem;
 }
 
 .welcome {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 1.5rem;
-  color: #fff;
+  color: #f35a78;
 }
 
 .header {
   font-size: 3rem;
-  line-height: 1.1;
-  margin-bottom: 1.2rem;
-  color: #fff;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+  color: #040349;
 }
 
 .headerDesc {
   text-align: justify;
-  line-height: 1.5;
+  text-justify: distribute;
+  text-align-last: left;
+  line-height: 1.8;
   font-size: 1.2rem;
-  font-weight: 300;
-  color: #fff;
+  font-weight: 400;
+  color: #333;
 }
 
 .buttons {
   display: flex;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .heroBanner {
@@ -44,5 +42,54 @@
 }
 
 .heroBanner img {
-  width: 300px;
+  width: 120%;
+  height: 100%;
+}
+
+@media (max-width: 1020px) {
+  .header {
+    font-size: 2rem;
+  }
+
+  .heroSection {
+    gap: 1.5rem;
+  }
+
+  .headerDesc {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .heroSection {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .heroBanner {
+    grid-row: 1 / 2;
+  }
+
+  .heroBanner img {
+    width: 100%;
+  }
+
+  .welcome {
+    display: none;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 665px) {
+  .heroSection {
+    padding: 6rem 9% 5rem;
+  }
+  .headerDesc {
+    font-size: 1.15rem;
+  }
 }

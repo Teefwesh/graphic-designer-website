@@ -53,9 +53,7 @@ function SimpleSlider() {
   };
   return (
     <div className="gallery">
-      <h1 data-aos="fade-left" data-aos-easing="ease-in-sine">
-        Our Work
-      </h1>
+      <h1 data-aos="fade-down">Our Work</h1>
       <Slider {...settings}>
         {gallery.map((item) => (
           <div className="card" key={item.id}>
