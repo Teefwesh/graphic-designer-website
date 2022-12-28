@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -73,7 +74,9 @@ function SimpleSlider() {
         data-aos="fade-up"
         data-aos-easing="ease-in-sine"
       >
-        <button className="view">View all</button>
+        <button className="view">
+          <Link to="/gallery">View all</Link>
+        </button>
       </div>
     </div>
   );

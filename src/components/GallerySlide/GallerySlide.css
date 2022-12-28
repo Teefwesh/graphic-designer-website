@@ -28,3 +28,7 @@
   background-color: #5d5dff;
   transition: all 0.3s;
 }
+
+.view a {
+  color: #fff;
+}

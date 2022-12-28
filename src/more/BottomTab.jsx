@@ -16,7 +16,7 @@ const BottomTab = () => {
         <i className="fa-solid fa-image bottomNav"></i>
       </Link>
 
-      <Link to="/">
+      <Link to="/#">
         <AiFillHome className="bottomNav home" />
       </Link>
 

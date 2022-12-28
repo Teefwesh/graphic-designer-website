@@ -42,3 +42,10 @@ a {
   border: 1px solid #030167;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 375px) {
+  .myBtn {
+    padding: 6px 10px;
+    font-size: 1rem;
+  }
+}

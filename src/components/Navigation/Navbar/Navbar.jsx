@@ -1,5 +1,6 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
+import Logo from "../../../images/mylogo.png";
 
 import "./Navbar.css";
 // import { GiHamburgerMenu } from "react-icons/gi";
@@ -9,7 +10,9 @@ const Navbar = ({ routes }) => {
     <div className="mainContainer">
       <div className="navContainer">
         <div className="navLogo">
-          <Link to="/">Amazing Grace</Link>
+          <Link to="#">
+            <img src={Logo} alt="Amazing grace logo" className="logo" />
+          </Link>
         </div>
 
         <div className="rightNab">

@@ -1,5 +1,5 @@
 .mainContainer {
-  background-color: #030166;
+  background-color: #fff;
   width: 100%;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -11,15 +11,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 5%;
+  padding: 0.1rem 5%;
 }
 
-.navLogo {
-  font-size: 2rem;
-}
-
-.navLogo a {
-  color: #fff;
+.logo {
+  width: 120px;
+  height: 80px;
 }
 
 .navRoutes {
@@ -31,7 +28,7 @@
 }
 
 .navRoute {
-  color: gold;
+  color: #030166;
 }
 
 @media (max-width: 880px) {
