@@ -3,23 +3,24 @@
 }
 
 .bottomNav {
-  color: #000;
+  color: #555;
   font-size: 2rem;
   cursor: pointer;
   display: none;
 }
 
 .bottomNav:hover {
+  color: #000;
   scale: 1.2;
   transition: all 0.3s;
 }
 
 .settings {
-  color: blue;
+  /* color: blue; */
   animation: spin 4s linear infinite;
 }
 
-.msg {
+/* .msg {
   color: blue;
 }
 
@@ -29,7 +30,7 @@
 
 .login {
   color: green;
-}
+} */
 
 @keyframes spin {
   100% {
