@@ -10,7 +10,7 @@ const Navbar = ({ routes }) => {
     <div className="mainContainer">
       <div className="navContainer">
         <div className="navLogo">
-          <Link to="#">
+          <Link to="/#">
             <img src={Logo} alt="Amazing grace logo" className="logo" />
           </Link>
         </div>
