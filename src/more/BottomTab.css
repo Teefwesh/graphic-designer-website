@@ -2,35 +2,15 @@
   display: flex;
 }
 
-.bottomNav {
-  color: #555;
-  font-size: 2rem;
-  cursor: pointer;
-  display: none;
-}
-
 .bottomNav:hover {
   color: #000;
   scale: 1.2;
   transition: all 0.3s;
 }
 
-.settings {
-  /* color: blue; */
-  animation: spin 4s linear infinite;
+.iconContainer:hover {
+  color: #000;
 }
-
-/* .msg {
-  color: blue;
-}
-
-.fa-image {
-  color: red;
-}
-
-.login {
-  color: green;
-} */
 
 @keyframes spin {
   100% {
@@ -41,14 +21,36 @@
 
 @media (max-width: 880px) {
   .bottomNav {
-    display: block;
+    color: #555;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .iconContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
   }
 
   .bottomTab {
     background: #f0f0f0;
     justify-content: space-around;
-    padding: 15px 0;
+    padding: 8px 0;
     position: sticky;
     bottom: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .iconContainer {
+    gap: 1px;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  .bottomNav {
+    font-size: 1.8rem;
   }
 }

@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 // import Gallery from "./pages/Gallery/Gallery";
 import Home from "./pages/Home/Home";
 import Posts from "./pages/posts/Posts";
+import Contact from "./pages/Contact/Contact";
 
 const App = () => {
   useEffect(() => {
@@ -20,6 +21,7 @@ const App = () => {
           <Route exact path="/" element={<Home />} />
           {/* <Route path="/gallery" element={<Gallery />} /> */}
           <Route path="/gallery" exact element={<Posts />} />
+          <Route path="/contact" exact element={<Contact />} />
         </Routes>
       </div>
     </QueryClientProvider>

@@ -15,9 +15,16 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+:root {
+  --basic-blue: #030167;
+  --default-text: #555;
+  --white: #fff;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 a {
   text-decoration: none;
-  color: #555;
+  color: var(--default-text);
 }
 
 .myBtn {
@@ -26,10 +33,10 @@ a {
   border-radius: 3px;
   font-size: 1.2rem;
   cursor: pointer;
-  background: #030167;
-  border: 1px solid #030167;
-  color: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background: var(--basic-blue);
+  border: 1px solid var(--basic-blue);
+  color: var(--white);
+  box-shadow: var(--box-shadow);
   font-weight: 500;
   transition: all 0.3s;
   font-family: "Poppins", sans-serif !important;
@@ -38,8 +45,8 @@ a {
 .myBtn:hover {
   transform: translateY(-2px);
   background-color: #fff;
-  color: #030167;
-  border: 1px solid #030167;
+  color: var(--basic-blue);
+  border: 1px solid var(--basic-blue);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
