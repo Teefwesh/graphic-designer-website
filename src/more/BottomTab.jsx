@@ -1,7 +1,6 @@
 import React from "react";
-import { AiFillHome, AiFillMessage } from "react-icons/ai";
-import { BsInfoCircleFill } from "react-icons/bs";
-import { MdPerson } from "react-icons/md";
+import { AiOutlineHome } from "react-icons/ai";
+import { BsInfoCircle, BsPerson, BsChatDots, BsImage } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 import "./BottomTab.css";
@@ -11,35 +10,36 @@ const BottomTab = () => {
     <div className="bottomTab">
       <Link to="/">
         <div className="iconContainer">
-          <BsInfoCircleFill className="bottomNav " />
+          <BsInfoCircle className="bottomNav " />
           <span className="iconDesc">About</span>
         </div>
       </Link>
 
       <Link to="/gallery">
         <div className="iconContainer">
-          <i className="fa-solid fa-image bottomNav"></i>
+          {/* <i className="fa-solid fa-image bottomNav"></i> */}
+          <BsImage className="bottomNav " />
           <span className="iconDesc">Gallery</span>
         </div>
       </Link>
 
       <Link to="/#">
         <div className="iconContainer">
-          <AiFillHome className="bottomNav " />
+          <AiOutlineHome className="bottomNav " />
           <span className="iconDesc">Home</span>
         </div>
       </Link>
 
       <Link to="/">
         <div className="iconContainer">
-          <AiFillMessage className="bottomNav " />
+          <BsChatDots className="bottomNav " />
           <span className="iconDesc">Contact</span>
         </div>
       </Link>
 
       <Link to="/">
         <div className="iconContainer">
-          <MdPerson className="bottomNav " />
+          <BsPerson className="bottomNav " />
           <span className="iconDesc">Login</span>
         </div>
       </Link>

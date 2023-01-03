@@ -41,7 +41,6 @@ const Store = () => {
     }
 
     mutation.mutate({ img: imgUrl });
-    imgUrl = "";
   };
 
   return (

@@ -19,6 +19,8 @@ const Posts = () => {
     })
   );
 
+  console.log(data);
+
   return (
     <>
       <Upload />
