@@ -8,13 +8,14 @@
 }
 
 .bottomNav:hover {
-  color: #000;
+  color: var(--basic-blue);
   scale: 1.2;
   transition: all 0.3s;
 }
 
 .iconContainer:hover {
-  color: #000;
+  color: var(--basic-blue);
+  font-weight: 600;
 }
 
 @keyframes spin {
@@ -37,6 +38,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-weight: 600;
   }
 
   .iconDesc {

@@ -1,7 +1,10 @@
 import React, { useEffect } from "react";
 import Business from "../../components/Business/Business";
 import SimpleSlider from "../../components/GallerySlide/GallerySlide";
-import HeroSection from "../HeroSection/HeroSection";
+import Navigation from "../../components/Navigation/Navigation";
+import HeroSection from "../../components/HeroSection/HeroSection";
+import Footer from "../../components/Footer/Footer";
+import BottomTab from "../../more/BottomTab";
 
 const Home = () => {
   useEffect(() => {
@@ -10,9 +13,12 @@ const Home = () => {
 
   return (
     <div>
+      <Navigation />
       <HeroSection />
       <Business />
       <SimpleSlider />
+      <Footer />
+      <BottomTab />
     </div>
   );
 };

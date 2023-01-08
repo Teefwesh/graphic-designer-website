@@ -19,4 +19,8 @@ export const routes = [
     name: "Contact",
     link: "/#",
   },
+  {
+    name: "Login",
+    link: "/login",
+  },
 ];

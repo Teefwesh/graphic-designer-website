@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { FiUpload } from "react-icons/fi";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import "./upload.css";
 import { api } from "../../api";
@@ -35,6 +37,10 @@ const Store = () => {
   const handleClick = async (e) => {
     e.preventDefault();
 
+    if (file === null) {
+      return toast.warning("Select an image");
+    }
+
     let imgUrl = "";
     if (file) {
       imgUrl = await upload();
@@ -61,6 +67,18 @@ const Store = () => {
           </button>
         </div>
       </div>
+      <ToastContainer
+        position="bottom-left"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </>
   );
 };

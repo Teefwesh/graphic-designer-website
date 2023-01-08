@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Posts from "./pages/posts/Posts";
 import Contact from "./pages/Contact/Contact";
+import Login from "./pages/Auth/Login";
 
 const App = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const App = () => {
           {/* <Route path="/gallery" element={<Gallery />} /> */}
           <Route path="/gallery" exact element={<Posts />} />
           <Route path="/contact" exact element={<Contact />} />
+          <Route path="/login" exact element={<Login />} />
         </Routes>
       </div>
     </QueryClientProvider>

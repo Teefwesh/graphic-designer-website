@@ -25,19 +25,19 @@ const BottomTab = () => {
 
       <Link to="/#">
         <div className="iconContainer">
-          <AiOutlineHome className="bottomNav " />
-          <span className="iconDesc">Home</span>
+          <AiOutlineHome className="bottomNav" />
+          <span className="iconDesc ">Home</span>
         </div>
       </Link>
 
       <Link to="/">
         <div className="iconContainer">
-          <BsChatDots className="bottomNav " />
-          <span className="iconDesc">Contact</span>
+          <BsChatDots className="bottomNav" />
+          <span className="iconDesc ">Contact</span>
         </div>
       </Link>
 
-      <Link to="/">
+      <Link to="/login">
         <div className="iconContainer">
           <BsPerson className="bottomNav " />
           <span className="iconDesc">Login</span>

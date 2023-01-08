@@ -6,7 +6,7 @@ import "./post.css";
 const Post = ({ post }) => {
   return (
     <div className="post">
-      <img src={`./upload/` + post.img} alt="pics" />
+      <img src={`http://agprints.com.ng/Images/${post.img}`} alt="pics" />
       {/* <div className="deleteIcon">
         <AiFillDelete className="icon" />
       </div> */}
