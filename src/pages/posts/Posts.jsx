@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import { useSelector } from "react-redux";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 import { api } from "../../api";
@@ -22,11 +23,13 @@ const Posts = () => {
     })
   );
 
+  const { isAuthenticated } = useSelector((state) => state.user);
+
   return (
     <>
       <Navigation />
 
-      <Upload />
+      {isAuthenticated && <Upload />}
 
       <motion.div layout className="posts">
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 3, 900: 4 }}>

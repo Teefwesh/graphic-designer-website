@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { Provider } from "react-redux";
+
+import store from "./store";
 import App from "./App";
 import Spinner from "./components/Spinner/Spinner";
 
@@ -10,7 +13,7 @@ const Loader = () => {
 
     setTimeout(() => {
       setLoading(false);
-    }, 6000);
+    }, 4000);
   }, []);
 
   return (
@@ -19,7 +22,9 @@ const Loader = () => {
         <Spinner />
       ) : (
         <>
-          <App />
+          <Provider store={store}>
+            <App />
+          </Provider>
         </>
       )}
     </div>

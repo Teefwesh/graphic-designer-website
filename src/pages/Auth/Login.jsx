@@ -1,19 +1,42 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { IconButton, InputAdornment, TextField } from "@mui/material";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import { useDispatch, useSelector } from "react-redux";
 
 import "./Login.css";
 import Logo from "../../images/mylogo.png";
 import Navigation from "../../components/Navigation/Navigation";
+import { login } from "../../actions/userAction";
 
 const Login = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const { error } = useSelector((state) => state.user);
+
+  const [inputs, setInputs] = useState({
+    email: "",
+    password: "",
+  });
+
   const [showPassword, setShowPassword] = useState(false);
 
   const handleShowPassword = () => {
     setShowPassword((prevShowPassword) => !prevShowPassword);
+  };
+
+  const handleChange = (e) => {
+    setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+
+    dispatch(login(inputs));
+    navigate("/");
   };
 
   return (
@@ -37,6 +60,8 @@ const Login = () => {
 
             <TextField
               label="Email Address"
+              name="email"
+              placeholder="example@gmail.com"
               type="email"
               className="input"
               required
@@ -46,6 +71,7 @@ const Login = () => {
                   fontSize: 15,
                 },
               }}
+              onChange={handleChange}
             />
 
             <TextField
@@ -70,9 +96,11 @@ const Login = () => {
                   fontSize: 15,
                 },
               }}
+              onChange={handleChange}
             />
 
-            <button type="submit" className="loginBtn">
+            {error && <span className="notify"> wrong email or password</span>}
+            <button type="submit" className="loginBtn" onClick={handleLogin}>
               Login
             </button>
           </form>

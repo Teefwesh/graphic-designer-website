@@ -1,11 +1,14 @@
 import React from "react";
 import { AiOutlineHome } from "react-icons/ai";
 import { BsInfoCircle, BsPerson, BsChatDots, BsImage } from "react-icons/bs";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 import "./BottomTab.css";
 
 const BottomTab = () => {
+  const { isAuthenticated } = useSelector((state) => state.user);
+
   return (
     <div className="bottomTab">
       <Link to="/">
@@ -37,7 +40,7 @@ const BottomTab = () => {
         </div>
       </Link>
 
-      <Link to="/login">
+      <Link to={isAuthenticated ? "/" : "/login"}>
         <div className="iconContainer">
           <BsPerson className="bottomNav " />
           <span className="iconDesc">Login</span>
